@@ -1,0 +1,20 @@
+{
+  "quest0_1234567890": {
+    "sums_url": "test_dlc-0.8-quest0_1234567890.sums", 
+    "version": "28b9ed848acb913b2e61420b5b3bdb7a1c4452d3c9106ca6d06cc367750f1687", 
+    "zsync_url": "test_dlc-0.8-quest0_1234567890.zsync", 
+    "json_url": "test_dlc-0.8-quest0_1234567890.update.json", 
+    "pretty_version": "0.8", 
+    "sums_size": 4, 
+    "digest": "75e47a118390aa59269677066532392f86eea9d956844d1371934d645c27dcaa"
+  }, 
+  "linux": {
+    "sums_url": "test_dlc-0.8-linux.sums", 
+    "version": "4e1883a0008269a8bce6ac140c7fac8e04e5b1ceb7c263d2d604b7e4f1437a8b", 
+    "zsync_url": "test_dlc-0.8-linux.zsync", 
+    "json_url": "test_dlc-0.8-linux.update.json", 
+    "pretty_version": "0.8", 
+    "sums_size": 4088, 
+    "digest": "f8605478ea97325e98ed0cc3e2d9126a461e5c69558a823f1163dc2d6d3751c3"
+  }
+}
