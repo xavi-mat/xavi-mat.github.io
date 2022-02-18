@@ -8,7 +8,7 @@ function sendRequest() {
     resp.innerHTML += '<span class="spinner-grow spinner-grow-sm"></span> <span class="spinner-grow spinner-grow-sm"></span> <span class="spinner-grow spinner-grow-sm"></span>';
 
     if (req) {
-        req = 'http://localhost/xavi-mat.github.io/' + req;
+        req = 'http://localhost/xavi-mat.github.io/api.php?input=' + req;
         let reqbtn = document.querySelector('#reqbtn');
         reqbtn.disabled = true;
         reqbtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Enviando...';
@@ -21,7 +21,7 @@ function sendRequest() {
         })
             .then((resp)=>resp.json())
             .then((data)=>{
-                resp.innerHTML = data.url;
+                resp.innerHTML = data.response;
                 reqbtn.innerHTML = 'Enviar';
                 reqbtn.disabled = false;
             });
