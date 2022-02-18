@@ -12,7 +12,13 @@ function sendRequest() {
         let reqbtn = document.querySelector('#reqbtn');
         reqbtn.disabled = true;
         reqbtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Enviando...';
-        fetch(req)
+        fetch(req, {
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
             .then((resp)=>resp.json())
             .then((data)=>{
                 resp.innerHTML = data.url;
