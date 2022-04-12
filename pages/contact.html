@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavimat's Contact Info</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="in-nav">
+      <span>Xavimat</span>
+      <span class="nav-buttons">
+        <a href="/">Home</a>
+        <a href="/pages/bio.html">Bio</a>
+        <a href="/pages/portfolio.html">Portfolio</a>
+        <a href="/pages/contact.html" class="active">Contact</a>
+      </span>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="hero">
+      <h1>Xavimat's Contact Info</h1>
+
+      <div class="cards-container">
+        <p><a href="https://www.facebook.com/xavimatoses/" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9aa0a6" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+          </a>
+        </p>
+        <p><a href="https://twitter.com/xavimat_" target="_blank" rel="noopener noreferrer" title="Twitter"><svg
+              xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44"
+              height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9aa0a6" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg></a></p>
+        <p><a href="https://www.linkedin.com/in/xavier-matoses/" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9aa0a6" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <line x1="8" y1="11" x2="8" y2="16" />
+              <line x1="8" y1="8" x2="8" y2="8.01" />
+              <line x1="12" y1="16" x2="12" y2="11" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg></a></p>
+      </div>
+    </section>
+    <!-- End of section hero -->
+
+    <div class="central">
+
+      <section id="content">
+        <p class="explain">If you want to contact me, you can send a message using the form below.</p>
+
+        <form method="get">
+          <label for="name">Name:*</label>&nbsp;
+          <input id="name" type="text" name="name" placeholder="Your name (required)" required autofocus>
+          <br>
+          <label for="email">Email:</label>&nbsp;
+          <input id="email" type="email" name="email" placeholder="Your email (optional)">
+          <br>
+          <select name="reason" id="reason">
+            <option disabled selected>-- Select the reason of your message --</option>
+            <option value="hire">I want to hire you</option>
+            <option value="class">I need a programming class</option>
+            <option value="hi">Just saying Hi</option>
+            <option value="marry">I wanna marry you</option>
+          </select>
+          <br>
+          <label for="message">Your message:*</label>
+          <br>
+          <textarea name="message" id="message" rows="8" placeholder="Write your message (required)"
+            required></textarea>
+          <br>
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement">I agree to the <a href="#">Terms & Conditions</a></label>
+          <br>
+          <div class="align-right">
+            <input type="submit" value="Send message">
+          </div>
+          <small>*Required fields.</small>
+          <br>
+        </form>
+      </section>
+
+      <!-- Empty sectin to show user input -->
+      <section id="side">
+      </section>
+
+    </div>
+    <!-- End of div central -->
+
+  </main>
+
+  <!-- Iframe outside main, so it expands all width -->
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12366.795422402874!2d-0.3169119588264309!3d39.20429099993359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b62fc4146bfb%3A0x4f13a5da85f49ee3!2s46410%20Sueca%2C%20Val%C3%A8ncia!5e0!3m2!1sca!2ses!4v1649783075515!5m2!1sca!2ses"
+      height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer>
+    <div class="in-foot">
+      &copy; 2022 by xavimat
+    </div>
+  </footer>
+
+  <div onclick="window.scrollTo(0,0)">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle go-up-btn" width="44"
+      height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <circle cx="12" cy="12" r="9" />
+      <line x1="12" y1="8" x2="8" y2="12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+      <line x1="16" y1="12" x2="12" y2="8" />
+    </svg>
+  </div>
+
+  <script>
+    // Show user input data, if any
+
+    // Get params from url
+    const params = new URLSearchParams(location.search);
+
+    // Put params as default values
+    let inn = '';
+    [...params.entries()].forEach(([key, value]) => {
+      inn += `<li>${key}: ${value}</li>`;
+    });
+
+    // If there are params, put them on 'side'
+    if (inn.length > 0) {
+      inn = '<p><strong>Your message has been sent:</strong></p><ul>' + inn + '</ul>';
+      document.getElementById('side').innerHTML = inn;
+    }
+
+  </script>
+
+</body>
+
+</html>

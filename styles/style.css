@@ -1,0 +1,312 @@
+/* ------------------------------------------------------------------------ */
+/*              My page styles                                              */
+/*              (c) 2022 by xavimat                                         */
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------ */
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ------------------------------------------------------------------------ */
+/* Root values */
+* {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* General container tags */
+h1,
+h2,
+h3 {
+    margin: 2rem 0 1rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Navigation  */
+nav {
+    position: static;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.in-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+}
+
+.nav-buttons>a {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.nav-buttons>a:hover {
+    background-color: lightgray;
+    color: #444444;
+}
+
+/* We need !important to override tag properties on .active button */
+.active {
+    background-color: #CCCCCC !important;
+    color: #222222 !important;
+}
+
+.active:hover {
+    background-color: #AAAAAA !important;
+    color: #111111 !important;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.in-foot {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Identifiers for general blocks */
+#hero {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#content {
+    margin-bottom: 0.5rem;
+}
+
+#center-portfolio {
+    max-width: 1024px;
+}
+
+#side {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Form  */
+/* On mobile, larger font */
+form * {
+    font-size: 110%;
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    width: 95%;
+    max-width: 600px;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Cards */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card {
+    border: 1px solid black;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    filter: brightness(50%);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 2px #FFFFFF,
+        -1px -1px 2px #FFFFFF,
+        1px -1px 2px #FFFFFF,
+        -1px 1px 2px #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 150%;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Some decorations on explanation paragraphs. */
+.explain::first-letter {
+    font-size: 150%;
+    color: maroon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Adjust my careto picture. */
+#main-picture {
+    width: 100%;
+    max-width: 400px;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Social icons */
+.icon {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon:hover {
+    background-color: #eeeeee;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------ */
+/* "Go up" button */
+
+.go-up-btn {
+    position: fixed;
+    right: 5px;
+    border-radius: 10%;
+    bottom: 20%;
+    background-color: #44444488;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Media queries */
+
+/* Possible break points */
+/* 576px */
+/* 768px */
+/* 992px */
+/* 1200px */
+
+/* Small screens */
+@media screen and (min-width:576px) {
+
+    /* Variations on nav */
+    nav {
+        position: sticky;
+        font-size: 1.25rem;
+    }
+
+    .in-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .3rem;
+    }
+
+    .nav-buttons {
+        flex-direction: row;
+    }
+
+    .nav-buttons>a {
+        padding: 0.2rem 0.4rem;
+    }
+
+    /* Higher cards */
+    .card {
+        height: 200px;
+    }
+
+    /* Smaller font size on footer */
+    footer {
+        font-size: 1.25rem;
+    }
+}
+
+/* Medium and larger screens */
+@media screen and (min-width:768px) {
+
+    /* Variations on nav */
+    nav {
+        font-size: 1rem;
+    }
+
+    .in-nav {
+        padding: 1rem;
+    }
+
+    .nav-buttons>a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Smaller font size on footer and footer */
+    footer {
+        font-size: 1rem;
+    }
+
+    form * {
+        font-size: 100%;
+    }
+
+    /* Central content blocks as row */
+    .central {
+        flex-direction: row;
+    }
+}
