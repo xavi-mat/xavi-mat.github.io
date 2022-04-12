@@ -238,8 +238,9 @@ iframe {
 
 .watermark {
     position: fixed;
-    top: 40%;
-    font-size: 100px;
+    top: 20%;
+    padding: 10%;
+    font-size: 50px;
     text-align: center;
     color: #66666666;
     rotate: -40deg;
@@ -287,6 +288,10 @@ iframe {
     footer {
         font-size: 1.25rem;
     }
+
+    .watermark {
+        font-size: 75px;
+    }
 }
 
 /* Medium and larger screens */
@@ -317,5 +322,9 @@ iframe {
     /* Central content blocks as row */
     .central {
         flex-direction: row;
+    }
+
+    .watermark {
+        font-size: 100px;
     }
 }
