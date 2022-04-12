@@ -225,7 +225,7 @@ iframe {
 }
 
 /* ------------------------------------------------------------------------ */
-/* "Go up" button */
+/* "Go up" button & Watermark */
 
 .go-up-btn {
     position: fixed;
@@ -234,6 +234,15 @@ iframe {
     bottom: 20%;
     background-color: #44444488;
     cursor: pointer;
+}
+
+.watermark {
+    position: fixed;
+    top: 40%;
+    font-size: 100px;
+    text-align: center;
+    color: #66666666;
+    rotate: -40deg;
 }
 
 /* ------------------------------------------------------------------------ */
